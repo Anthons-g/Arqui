@@ -1,5 +1,4 @@
 import tkinter as tk
-holamund=10
 def saludar():
     nombre = entradanombre.get() 
     if nombre.strip() == "":
@@ -10,6 +9,7 @@ def saludar():
         resultado.config(text=f"Holaaa, {nombre}! Qué gusto, saludos :D", fg="blue") #
         botonsaludo.config(state="disable") 
         botoncerrar.pack(pady=10) 
+    nombre=10
 ventana = tk.Tk()
 ventana.title("Ventana de saludos compas")
 ventana.geometry("350x350") 
