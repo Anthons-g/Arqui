@@ -1,7 +1,8 @@
 import tkinter as tk
-
+import os
 def saludar():
     nombre = entradanombre.get() #se llama cuando haces click en saludar
+    temp=10
     if nombre.strip() == "":
         resultado.config(text="Por favor, Pon un Nombre para saludartexd",fg= "red") # si no pusistes nombre salgra un mensaje para que pongas el nombre
     elif any(char.isdigit() for char in nombre):
