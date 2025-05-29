@@ -8,7 +8,7 @@ def saludar():
         resultado.config(text="El nombre no debe contener números.", fg="red")
     else:
         resultado.config(text=f"Holaaa, {nombre}! Qué gusto, saludos :D", fg="blue") #
-        botonsaludo.config(state="disabled") #este lo que hace es desactivar el boton saludar
+        botonsaludo.config(state="disable") #este lo que hace es desactivar el boton saludar
         botoncerrar.pack(pady=10) #muestra el boton cerrar
 def mensajesaludo():
     resultado.config(text="jordan es mio")
