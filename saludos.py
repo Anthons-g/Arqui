@@ -10,11 +10,12 @@ def saludar():
         resultado.config(text=f"Holaaa, {nombre}! Qué gusto, saludos :D", fg="blue") #
         botonsaludo.config(state="disabled") #este lo que hace es desactivar el boton saludar
         botoncerrar.pack(pady=10) #muestra el boton cerrar
-
+def mensajesaludo():
+    resultado.config(text="jordan es mio")
 #crwcion de la ventana con tkinter
 ventana = tk.Tk()
 ventana.title("Ventana de saludos compas")# nombre de la ventana 
-ventana.geometry("350x200") # el tamaño con el que salgra la ventana 
+ventana.geometry("350x350") # el tamaño con el que salgra la ventana 
 
 #aqui es donde se muestra la primer tiqueta que seria la primer etiqueta
 Etiquetapregunta = tk.Label(ventana, text="Holaaas, ¿como te llamas :)?", font=("Arial", 12))
@@ -26,9 +27,10 @@ entradanombre.pack()
 
 # Botón saludo
 botonsaludo = tk.Button(ventana, text="Saludar", font=("Arial", 11), command=saludar)
-botonsaludo.pack(pady=5)  
+botonsaludo.pack(pady=5) 
 
-
+botonsaludooos = tk.Button(ventana, text="jordan meco", font=("Arial", 11), command=mensajesaludo)
+botonsaludooos.pack(pady=5)
 # Etiqueta que sale cuando no pones nombre 
 resultado = tk.Label(ventana, text="", font=("Arial", 12))
 resultado.pack()
