@@ -7,9 +7,8 @@ def saludar():
         resultado.config(text="El nombre no debe contener números.", fg="red")
     else:
         resultado.config(text=f"Holaaa, {nombre}! Qué gusto, saludos :D", fg="blue") #
-        botonsaludo.config(state="disable") 
-        botoncerrar.pack(pady=10) 
-    nombre=10
+        botonsaludo.config(state="disabled") 
+        botoncerrar.pack(pady=10)
 ventana = tk.Tk()
 ventana.title("Ventana de saludos compas")
 ventana.geometry("350x350") 
@@ -27,5 +26,6 @@ resultado = tk.Label(ventana, text="", font=("Arial", 12))
 resultado.pack()
 
 botoncerrar = tk.Button(ventana, text="Cerrar", font=("Arial", 11), command=ventana.destroy)
+
 
 ventana.mainloop()
