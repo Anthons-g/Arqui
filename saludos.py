@@ -9,7 +9,6 @@ def saludar():
         resultado.config(text=f"Holaaa, {nombre}! Qué gusto, saludos :D", fg="blue") #
         botonsaludo.config(state="disabled") 
         botoncerrar.pack(pady=10)
-    nombre=10
 ventana = tk.Tk()
 ventana.title("Ventana de saludos compas")
 ventana.geometry("350x350") 
